@@ -27,6 +27,6 @@ class RedditVideoBot(discord.Client):
             videolink = getVideoLink(message.content)
             if (videolink != ""):
                 await message.reply(videolink)
-token = os.enviorn.get('TOKEN')
+token = os.environ.get('TOKEN')
 client = RedditVideoBot()
 client.run(token)
