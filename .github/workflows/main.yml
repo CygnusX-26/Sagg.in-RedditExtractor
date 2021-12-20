@@ -15,7 +15,7 @@ jobs:
     steps:
 
     - uses: actions/checkout@master
-    - name: Publish Flask Image to Registry
+    - name: Publish Image to Registry
       uses: elgohr/Publish-Docker-Github-Action@master
       with:
         name: saggins/sagg.in-redditextractor
