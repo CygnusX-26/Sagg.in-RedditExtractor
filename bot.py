@@ -27,6 +27,8 @@ class RedditVideoBot(discord.Client):
             videolink = getVideoLink(message.content)
             if (videolink != ""):
                 await message.reply(videolink)
+                await message.channel.send(message.author.mention)
+                await message.delete()
 token = os.environ.get('TOKEN')
 client = RedditVideoBot()
 client.run(token)
